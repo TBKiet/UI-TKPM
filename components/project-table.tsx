@@ -70,7 +70,7 @@ export default function ProjectTable() {
   }
 
   return (
-    <Card className="shadow-md w-full">
+    <Card className="shadow-md w-full h-full">
       <CardHeader className="flex flex-row items-center justify-between px-8 py-6 border-b">
         <CardTitle className="text-2xl font-bold">Video Projects</CardTitle>
         <div className="relative w-80">
@@ -84,7 +84,7 @@ export default function ProjectTable() {
         </div>
       </CardHeader>
       <CardContent className="px-8 py-6">
-        <div className="rounded-md border w-full">
+        <div className="rounded-md border w-full h-full">
           <Table className="w-full table-fixed">
             <TableHeader>
               <TableRow>

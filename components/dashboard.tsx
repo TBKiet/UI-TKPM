@@ -26,7 +26,7 @@ export default function Dashboard() {
 
   return (
     <SidebarProvider>
-      <div className="flex min-h-screen bg-gray-50">
+      <div className="flex min-h-screen w-full bg-gray-50">
         <DashboardSidebar activePage={activePage} setActivePage={setActivePage} onAccountClick={handleAccountClick} />
         <DashboardContent activePage={activePage} />
       </div>

@@ -56,10 +56,10 @@ export default function DashboardContent({ activePage }: DashboardContentProps) 
             </div>
 
             <div className="grid gap-10 grid-cols-12">
-              <div className="col-span-5">
+              <div className="col-span-12 lg:col-span-5">
                 <VideoForm onSubmit={handleFormSubmit} isLoading={isLoading} />
               </div>
-              <div className="col-span-7">
+              <div className="col-span-12 lg:col-span-7">
                 <PreviewTabs project={currentProject} />
               </div>
             </div>
@@ -85,5 +85,5 @@ export default function DashboardContent({ activePage }: DashboardContentProps) 
     }
   }
 
-  return <main className="flex-1 overflow-auto py-10">{renderContent()}</main>
+  return <main className="flex-1 overflow-auto py-10 w-full">{renderContent()}</main>
 }

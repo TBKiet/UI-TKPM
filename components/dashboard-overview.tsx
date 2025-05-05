@@ -186,14 +186,14 @@ export default function DashboardOverview() {
   }
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="w-full px-8 py-6">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
         <p className="text-gray-600">Overview of your scientific video creation platform</p>
       </div>
 
       {/* Stats Cards */}
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-8">
+      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-8">
         {stats.map((stat, index) => (
           <Card key={index}>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
@@ -214,9 +214,9 @@ export default function DashboardOverview() {
         ))}
       </div>
 
-      <div className="grid gap-6 md:grid-cols-7 mb-8">
+      <div className="grid gap-6 grid-cols-1 lg:grid-cols-7 mb-8">
         {/* Recent Projects */}
-        <Card className="md:col-span-4">
+        <Card className="lg:col-span-4">
           <CardHeader>
             <div className="flex items-center justify-between">
               <CardTitle>Recent Projects</CardTitle>
@@ -266,7 +266,7 @@ export default function DashboardOverview() {
         </Card>
 
         {/* Activity Timeline */}
-        <Card className="md:col-span-3">
+        <Card className="lg:col-span-3">
           <CardHeader>
             <CardTitle>Recent Activity</CardTitle>
             <CardDescription>Your latest actions and system updates</CardDescription>
@@ -303,7 +303,7 @@ export default function DashboardOverview() {
       {/* Quick Actions */}
       <div className="mb-8">
         <h2 className="text-xl font-bold mb-4">Quick Actions</h2>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {quickActions.map((action, index) => (
             <Card
               key={index}
